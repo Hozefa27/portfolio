@@ -1,0 +1,14 @@
+{
+  "id": "ai-resume-screener",
+  "title": "AI Resume Screener",
+  "tagline": "Automated resume shortlisting using NLP & ML",
+  "description": "Built an end-to-end pipeline that parses resumes (PDF/DOCX), extracts skills using spaCy NER, and scores candidates against a job description. Reduced manual screening time by 70% in pilot testing. Features a REST API backend with FastAPI and a React dashboard for HR teams.",
+  "tech": ["Python", "spaCy", "FastAPI", "React", "PostgreSQL", "Docker"],
+  "category": "AI/ML",
+  "status": "completed",
+  "github": "https://github.com/Hozefa27/",
+  "demo": "",
+  "thumbnail": "",
+  "featured": true,
+  "date": "2024-06"
+}

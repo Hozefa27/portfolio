@@ -1,0 +1,14 @@
+{
+  "id": "predictive-analytics-workbench",
+  "title": "Predictive Telemetry & Analytics Engine",
+  "tagline": "Statistical time-series forecasting & performance intelligence",
+  "description": "Engineered analytical pipelines that process high-frequency operational telemetry metrics. Implemented exploratory data analysis, statistical regression, and forecasting models to predict system anomalies before degradation occurs.",
+  "tech": ["Python", "Pandas", "NumPy", "Scikit-Learn", "Matplotlib", "SQL"],
+  "category": "Data Science",
+  "status": "completed",
+  "github": "https://github.com/Hozefa27/",
+  "demo": "",
+  "thumbnail": "",
+  "featured": false,
+  "date": "2024-11"
+}

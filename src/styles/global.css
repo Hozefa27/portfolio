@@ -1,0 +1,299 @@
+/* ============================================================
+   GLOBAL CSS — Deep Space Cyber-Cosmos Design System
+   Bespoke, High-End Astrodynamics & Intelligent Systems Aesthetic
+   ============================================================ */
+
+:root {
+  /* Cosmic Void & Substratum */
+  --space-void:        #02040a;
+  --space-abyss:       #040817;
+  --space-surface:     rgba(9, 16, 36, 0.72);
+  --space-surface-hover: rgba(15, 27, 58, 0.88);
+  --space-glass:       rgba(8, 14, 30, 0.65);
+  
+  /* Celestial Spectral Spectrum (NOT generic Claude/AI blue-purple) */
+  --quantum-cyan:      #00f5d4;   /* Electric Supernova Beam */
+  --quantum-cyan-glow: rgba(0, 245, 212, 0.35);
+  --solar-amber:       #ffaa00;   /* Quasar Flare / Gold Core */
+  --solar-amber-glow:  rgba(255, 170, 0, 0.35);
+  --nebula-violet:     #7928ca;   /* Deep Space Radiation */
+  --plasma-magenta:    #f72585;   /* High-Energy Particle */
+  --starlight-blue:    #38bdf8;   /* Stellar Flare */
+
+  /* Text & Radiance */
+  --starlight-white:   #f8fafc;
+  --starlight-muted:   #94a3b8;
+  --starlight-faint:   #475569;
+  --space-border:      rgba(0, 245, 212, 0.14);
+  --space-border-strong: rgba(0, 245, 212, 0.38);
+  --space-border-amber: rgba(255, 170, 0, 0.25);
+
+  /* Gradients */
+  --grad-beam:         linear-gradient(135deg, var(--quantum-cyan) 0%, var(--starlight-blue) 50%, var(--solar-amber) 100%);
+  --grad-cosmic-glow:  radial-gradient(ellipse at 50% 0%, rgba(0, 245, 212, 0.12) 0%, rgba(121, 40, 202, 0.08) 45%, transparent 75%);
+  --grad-card-surface: linear-gradient(145deg, rgba(14, 25, 52, 0.6) 0%, rgba(7, 12, 26, 0.85) 100%);
+  --grad-amber-flare:  linear-gradient(135deg, #ffaa00 0%, #ff5e36 100%);
+
+  /* Glassmorphism */
+  --glass-blur:        blur(16px);
+  --glass-border:      1px solid var(--space-border);
+
+  /* Shadows */
+  --shadow-stellar:    0 10px 40px -10px rgba(0, 245, 212, 0.2);
+  --shadow-solar:      0 10px 40px -10px rgba(255, 170, 0, 0.25);
+  --shadow-abyss:      0 20px 50px rgba(0, 0, 0, 0.85);
+
+  /* Typography */
+  --font-display:      'Space Grotesk', -apple-system, sans-serif;
+  --font-body:         'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-telemetry:    'JetBrains Mono', monospace;
+
+  /* Spacing */
+  --space-xs:  0.25rem;
+  --space-sm:  0.5rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2rem;
+  --space-2xl: 3.5rem;
+  --space-3xl: 6rem;
+
+  /* Radii */
+  --radius-sm:  6px;
+  --radius-md:  12px;
+  --radius-lg:  18px;
+  --radius-xl:  24px;
+  --radius-full: 9999px;
+
+  /* Nav offsets */
+  --nav-h: 70px;
+  --ticker-h: 38px;
+  --offset-top: calc(var(--nav-h) + var(--ticker-h));
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--space-void);
+  color: var(--starlight-white);
+}
+
+body.space-theme {
+  font-family: var(--font-body);
+  background: var(--space-void);
+  color: var(--starlight-white);
+  line-height: 1.7;
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Canvas & Atmospheric Nebula */
+#particles-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+.nebula-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: 
+    radial-gradient(circle at 15% 25%, rgba(0, 245, 212, 0.04) 0%, transparent 45%),
+    radial-gradient(circle at 85% 70%, rgba(121, 40, 202, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 50% 90%, rgba(255, 170, 0, 0.03) 0%, transparent 40%);
+}
+
+/* Typography Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+h1 { font-size: clamp(2.6rem, 6.5vw, 4.8rem); font-weight: 800; }
+h2 { font-size: clamp(1.8rem, 4.5vw, 2.8rem); font-weight: 700; }
+h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); font-weight: 600; }
+
+p { margin-block: var(--space-sm); color: var(--starlight-muted); }
+
+a {
+  color: var(--quantum-cyan);
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+a:hover {
+  color: var(--solar-amber);
+  text-shadow: 0 0 12px var(--solar-amber-glow);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul { list-style: none; }
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* Layout Utilities */
+.container {
+  width: min(1200px, 92%);
+  margin-inline: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.section {
+  padding-block: var(--space-3xl);
+  position: relative;
+  z-index: 1;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+  position: relative;
+}
+
+.section-kicker {
+  font-family: var(--font-telemetry);
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  color: var(--quantum-cyan);
+  text-transform: uppercase;
+  margin-bottom: var(--space-xs);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.section-kicker::before, .section-kicker::after {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 1px;
+  background: var(--quantum-cyan);
+}
+
+.section-header h2 {
+  color: var(--starlight-white);
+  text-shadow: 0 0 35px rgba(255, 255, 255, 0.1);
+}
+
+.section-divider {
+  width: 70px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--quantum-cyan), var(--solar-amber), transparent);
+  border-radius: var(--radius-full);
+  margin: var(--space-md) auto 0;
+  box-shadow: 0 0 14px var(--quantum-cyan-glow);
+}
+
+/* Telemetry Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.3em 0.85em;
+  background: rgba(0, 245, 212, 0.08);
+  color: var(--quantum-cyan);
+  border: 1px solid rgba(0, 245, 212, 0.22);
+  border-radius: var(--radius-sm);
+  font-size: 0.76rem;
+  font-weight: 500;
+  font-family: var(--font-telemetry);
+  transition: all 0.2s ease;
+  letter-spacing: 0.02em;
+}
+.badge:hover {
+  background: rgba(0, 245, 212, 0.16);
+  border-color: var(--quantum-cyan);
+  box-shadow: 0 0 15px rgba(0, 245, 212, 0.3);
+  transform: translateY(-1px);
+}
+
+.badge.solar, .badge.amber {
+  background: rgba(255, 170, 0, 0.08);
+  color: var(--solar-amber);
+  border-color: rgba(255, 170, 0, 0.24);
+}
+.badge.solar:hover, .badge.amber:hover {
+  border-color: var(--solar-amber);
+  box-shadow: 0 0 15px var(--solar-amber-glow);
+}
+
+.badge.plasma, .badge.purple {
+  background: rgba(247, 37, 133, 0.08);
+  color: #f72585;
+  border-color: rgba(247, 37, 133, 0.24);
+}
+
+.badge.starlight, .badge.green {
+  background: rgba(56, 189, 248, 0.08);
+  color: var(--starlight-blue);
+  border-color: rgba(56, 189, 248, 0.24);
+}
+
+/* Focus and Selection */
+:focus-visible {
+  outline: 2px solid var(--quantum-cyan);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+::selection {
+  background: rgba(0, 245, 212, 0.3);
+  color: #fff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 7px; }
+::-webkit-scrollbar-track { background: var(--space-void); }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--quantum-cyan), var(--nebula-violet));
+  border-radius: var(--radius-full);
+}
+
+/* Main Content Wrapper */
+#main-content {
+  padding-top: var(--offset-top);
+  min-height: calc(100vh - var(--offset-top));
+  position: relative;
+  z-index: 1;
+}
+
+/* Spinners & Loaders */
+.page-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 50vh;
+  gap: var(--space-lg);
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgba(0, 245, 212, 0.15);
+  border-top-color: var(--quantum-cyan);
+  border-right-color: var(--solar-amber);
+  border-radius: 50%;
+  animation: cosmic-orbit 0.9s linear infinite;
+  box-shadow: 0 0 25px rgba(0, 245, 212, 0.25);
+}

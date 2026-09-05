@@ -1,0 +1,14 @@
+{
+  "id": "enterprise-anomaly-detector",
+  "title": "Autonomous Config Anomaly Detector",
+  "tagline": "Real-time enterprise validation engine with automated alerting",
+  "description": "Architected an end-to-end Python pipeline at enterprise scale that ingests and evaluates over 500+ configuration telemetry files daily. Built custom schema validation, automated drift detection, and immediate Slack/Webhook alerts, slashing manual triage hours by 85%.",
+  "tech": ["Python", "FastAPI", "Pandas", "Docker", "Linux", "Slack API"],
+  "category": "Automation",
+  "status": "completed",
+  "github": "https://github.com/Hozefa27/",
+  "demo": "",
+  "thumbnail": "",
+  "featured": true,
+  "date": "2025-02"
+}

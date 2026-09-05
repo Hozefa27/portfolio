@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "cricket-algorithms-and-creativity",
+    "title": "The Cricket Pitch and the Codebase: Lessons in Strategy & Resilience",
+    "date": "2025-10-12",
+    "tags": ["Cricket", "Leadership", "Strategy", "Literature"],
+    "excerpt": "How captaincy decisions, bowling spells, and momentum shifts in cricket taught me how to architect fault-tolerant systems and lead engineering teams.",
+    "readTime": "4 min read"
+  },
+  {
+    "slug": "automation-superpower",
+    "title": "Automation is the New Superpower",
+    "date": "2025-08-20",
+    "tags": ["Automation", "AI", "Python", "TCS"],
+    "excerpt": "Why every engineer today must learn to build systems that work while they sleep — and how I started my automation journey at TCS.",
+    "readTime": "5 min read"
+  }
+]

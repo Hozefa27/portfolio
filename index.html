@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hozefa Lightwala — Python Developer, AI/ML Engineer & Automation Architect. Portfolio, projects, research, blogs and resume." />
+  <meta name="keywords" content="Hozefa Lightwala, Python Developer, AI ML Engineer, Data Science, TCS, TIFR, Mumbai, Portfolio, Automation" />
+  <meta name="author" content="Hozefa Lightwala" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Hozefa Lightwala — Tech Leader & Intelligent Systems Architect" />
+  <meta property="og:description" content="Python Developer · AI/ML Engineer · Data Science. Thriving on change through automation." />
+  <meta property="og:image" content="./photo1.jpeg" />
+
+  <title>Hozefa Lightwala | Intelligent Systems & Tech Leadership</title>
+
+  <!-- High-end Space & Tech Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./src/styles/global.css" />
+  <link rel="stylesheet" href="./src/styles/components.css" />
+  <link rel="stylesheet" href="./src/styles/animations.css" />
+
+  <link rel="icon" type="image/jpeg" href="./photo1.jpeg" />
+</head>
+<body class="space-theme">
+
+  <!-- ===== CELESTIAL STARRY CANVAS & NEBULA BACKGROUND ===== -->
+  <canvas id="particles-canvas"></canvas>
+  <div class="nebula-overlay" aria-hidden="true"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#/" class="nav-brand" aria-label="Hozefa Lightwala Home">
+        <span class="brand-orbit-icon">
+          <span class="orbit-ring"></span>
+          <span class="orbit-planet"></span>
+        </span>
+        <span class="brand-name-group">
+          <span class="brand-first">HOZEFA</span>
+          <span class="brand-last">LIGHTWALA</span>
+        </span>
+        <span class="brand-telemetry-badge">SYS: ONLINE</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="#/" class="nav-link" data-page="home"><i class="fas fa-satellite"></i> Orbit</a></li>
+        <li><a href="#/resume" class="nav-link" data-page="resume"><i class="fas fa-file-invoice"></i> Resume</a></li>
+        <li><a href="#/projects" class="nav-link" data-page="projects"><i class="fas fa-microchip"></i> Projects</a></li>
+        <li><a href="#/blog" class="nav-link" data-page="blog"><i class="fas fa-feather-pointed"></i> Chronicles</a></li>
+        <li><a href="#/contact" class="nav-link" data-page="contact"><i class="fas fa-signal"></i> Transmission</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== LIVE SPACE TELEMETRY TICKER ===== -->
+  <div class="ticker-wrapper" role="marquee" aria-label="Live updates">
+    <div class="ticker-label">
+      <span class="ticker-pulse-dot"></span>
+      <span class="ticker-label-text">TELEMETRY</span>
+    </div>
+    <div class="ticker-track" id="tickerTrack">
+      <div class="ticker-content" id="tickerContent">
+        <span>Initializing telemetry streams...</span>
+      </div>
+    </div>
+    <div class="ticker-coords" aria-hidden="true">
+      <span class="coord-tag">LOC // MUMBAI [18.97°N, 72.83°E]</span>
+    </div>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main-content" role="main" tabindex="-1"></main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-name-group">
+            <span class="brand-first">HOZEFA</span>
+            <span class="brand-last">LIGHTWALA</span>
+          </div>
+          <p class="footer-role">Python Developer · AI/ML Systems Engineer · Data Science</p>
+          <p class="footer-tagline">Architecting intelligent automation systems where human creativity meets algorithmic precision.</p>
+        </div>
+        <div class="footer-social-panel">
+          <div class="footer-social-label">SECURE CHANNELS</div>
+          <div class="footer-links">
+            <a href="https://www.linkedin.com/in/hozefalightwala27" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon-btn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Hozefa27/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon-btn"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/huzefa_78652" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon-btn"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:hozefalightwala27@gmail.com" aria-label="Email" class="social-icon-btn"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-coords">ORBITAL SECTOR: BYCULLA, MUMBAI, IN // 2026 EDITION</p>
+        <p class="footer-copy">Crafted with precision & modern web architecture. All systems operational.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCROLL TO TOP ===== -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- marked.js for Markdown rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <!-- App JS Modules -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

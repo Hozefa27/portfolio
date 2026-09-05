@@ -1,0 +1,52 @@
+[
+  {
+    "year": "2014",
+    "type": "education",
+    "icon": "🏫",
+    "title": "SSC — 10th Grade",
+    "institution": "Saifi High School",
+    "location": "Mumbai",
+    "detail": "Secured 86% — Laid the foundation with discipline and curiosity",
+    "side": "left"
+  },
+  {
+    "year": "2016",
+    "type": "education",
+    "icon": "📚",
+    "title": "HSC — 12th Grade (Science)",
+    "institution": "Jai Hind College",
+    "location": "Mumbai",
+    "detail": "Scored 72% — Discovered passion for technology and problem-solving",
+    "side": "right"
+  },
+  {
+    "year": "2016–2020",
+    "type": "education",
+    "icon": "🎓",
+    "title": "B.E. in Information Technology",
+    "institution": "Mumbai University",
+    "location": "Mumbai",
+    "detail": "CGPA: 8.2 — Deep-dived into algorithms, ML, and software engineering",
+    "side": "left"
+  },
+  {
+    "year": "2019",
+    "type": "work",
+    "icon": "🔬",
+    "title": "Research Intern",
+    "institution": "TIFR — Tata Institute of Fundamental Research",
+    "location": "Mumbai",
+    "detail": "Worked on cutting-edge research problems, blending science and technology",
+    "side": "right"
+  },
+  {
+    "year": "2020–Present",
+    "type": "work",
+    "icon": "💼",
+    "title": "Software Engineer",
+    "institution": "Tata Consultancy Services (TCS)",
+    "location": "Mumbai",
+    "detail": "Driving automation, AI/ML solutions, and digital transformation at scale",
+    "side": "left"
+  }
+]
