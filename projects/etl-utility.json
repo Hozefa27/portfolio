@@ -1,0 +1,14 @@
+{
+  "id": "etl-utility",
+  "title": "ETL Utility",
+  "tagline": "Developed a python based ETL utility that automates data extraction, transformation, and uploading processes for large-scale datasets.",
+  "description": "The ETL utility is a python-based solution that streamlines the process of extracting data from various sources, transforming it into a consistent format, and loading it into a target destination. It supports multiple data sources including CSV, EXCEL, and SQL databases, and provides a user-friendly interface for configuring ETL workflows. It is a configuration based utility which provides individual screens to configure each step of the ETL process. The utility is designed to handle large-scale datasets efficiently via parallel processing and vectorization, ensuring data integrity and consistency throughout the ETL process. Each process is logged for monitoring and accessing of utility is done through user registration on local with OTP based authentication.",
+  "tech": ["Python", "Pandas", "Fleet", "Requests", "SQLAlchemy", "Numpy","Openpyxl"],
+  "category": "Automation",
+  "status": "completed",
+  "github": "https://github.com/Hozefa27/",
+  "demo": "",
+  "thumbnail": "",
+  "featured": true,
+  "date": "2024-06"
+}
