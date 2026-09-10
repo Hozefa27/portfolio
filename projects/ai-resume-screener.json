@@ -1,14 +1,14 @@
 {
-  "id": "ai-resume-screener",
-  "title": "AI Resume Screener",
-  "tagline": "Automated resume shortlisting using NLP & ML",
-  "description": "Built an end-to-end pipeline that parses resumes (PDF/DOCX), extracts skills using spaCy NER, and scores candidates against a job description. Reduced manual screening time by 70% in pilot testing. Features a REST API backend with FastAPI and a React dashboard for HR teams.",
-  "tech": ["Python", "spaCy", "FastAPI", "React", "PostgreSQL", "Docker"],
+  "id": "ai-cv-creator",
+  "title": "AI CV Creator & ATS Optimization Studio",
+  "tagline": "Dual-LLM Resume Tailoring & Hybrid ATS Gap Analysis Studio",
+  "description": "Engineered an end-to-end local AI pipeline using dual open-source LLMs (Gemma 2B for entity extraction and Llama 3.2 3B for executive tailoring). Features a hybrid ATS scoring engine (70% deterministic token overlap with regex word-boundary matching + 30% LLM qualitative auditing), dual synthesis modes (strict zero-hallucination vs. creative tailoring with locked employer history), single-column ATS Word/Markdown document generation, and an interactive desktop/web Flet studio with live side-by-side resume comparison.",
+  "tech": ["Python", "Ollama", "Gemma 2", "Llama 3.2", "Pydantic", "Flet", "python-docx", "pypdf", "PyTest", "ReportLab"],
   "category": "AI/ML",
   "status": "completed",
-  "github": "https://github.com/Hozefa27/",
-  "demo": "",
+  "github": "https://github.com/Hozefa27",
+  "demo": "http://localhost:8550",
   "thumbnail": "",
   "featured": true,
-  "date": "2024-06"
+  "date": "2026-09"
 }
