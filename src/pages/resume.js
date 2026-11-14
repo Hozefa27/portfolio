@@ -8,7 +8,7 @@ const RESUME = {
   roleTag: 'ENGINEERING • ANALYTICS • INTELLIGENT SYSTEMS',
   file: './resume/python_data_science_ai_ml_engineer.pdf',
   desc: 'Combines Python backend engineering and automation with data analysis, statistical modeling, and production-ready AI/ML. Experienced in turning complex enterprise data into reliable pipelines, predictive insights, and intelligent applications.',
-  highlights: ['Python & APIs', 'Automation & ETL', 'Pandas / NumPy / SQL', 'Statistical Modeling', 'Scikit-learn / PyTorch', 'NLP & LLMs', 'Model Serving', 'Docker & Linux'],
+  highlights: ['Python & Java', 'MySQL & MongoDB', 'Django & FastAPI', 'Automation & ETL', 'Pandas & NumPy', 'Scikit-learn & Dash', 'NLP & LLMs', 'Data Visualization'],
   badgeClass: 'cyan',
   btnClass: 'btn-primary'
 };
