@@ -1,13 +1,9 @@
-# Resume Files
+# Resume File
 
-Place your PDF resumes here with EXACTLY these filenames:
+The website's unified resume download uses:
 
 | File | Purpose |
 |---|---|
-| `python_developer.pdf` | Downloaded when user clicks "Python Developer" |
-| `ai_ml_engineer.pdf` | Downloaded when user clicks "AI / ML Engineer" |
-| `data_science.pdf` | Downloaded when user clicks "Data Science" |
+| `python_data_science_ai_ml_engineer.pdf` | Python, Data Science, and AI/ML Engineer resume |
 
-These files are served from `/public/resume/` in the website.
-
-> ⚠️ Until you add the real PDFs, the download buttons will show a 404. That's expected.
+Run `python generate_resumes.py` from the project root to generate this PDF in both resume folders.

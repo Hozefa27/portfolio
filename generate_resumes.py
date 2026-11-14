@@ -1,6 +1,6 @@
 """
-Generate 3 clean, valid PDF resumes for Hozefa Lightwala using pure Python standard library.
-Produces real PDF 1.4 files that open in any PDF viewer or browser.
+Generate a clean, valid combined Python, Data Science, and AI/ML resume PDF.
+Produces a PDF 1.4 file using only the Python standard library.
 """
 import os
 
@@ -117,59 +117,27 @@ edu = [
     {'degree': 'SSC (10th Standard)', 'inst': 'Saifi High School', 'score': '86% (2014)'}
 ]
 
-roles_data = [
-    {
-        'file': 'python_developer.pdf',
-        'title': 'Python Developer & Automation Specialist',
-        'summary': 'Passionate Python Developer and Tech Leader specializing in building robust backend architectures, scalable automated workflows, and microservices at enterprise scale.',
-        'skills': [
-            'Python 3.x, FastAPI, Django, Flask, REST APIs, Microservices Architecture',
-            'Automation Pipelines, Scripting, Celery, Task Schedulers, CI/CD',
-            'SQL (PostgreSQL, MySQL), Redis, ORMs, Database Optimization',
-            'Docker, Linux Systems Administration, Git, Testing & Security'
-        ],
-        'exp': [
-            {'role': 'Software Engineer', 'company': 'Tata Consultancy Services (TCS)', 'period': '2020 - Present', 'desc': 'Architecting automated data and validation pipelines, reducing manual review hours by over 80%.'},
-            {'role': 'Research Intern', 'company': 'Tata Institute of Fundamental Research (TIFR)', 'period': '2019', 'desc': 'Implemented Python data processing workflows for scientific research datasets.'}
-        ]
-    },
-    {
-        'file': 'ai_ml_engineer.pdf',
-        'title': 'AI / ML Engineer & Intelligent Systems Specialist',
-        'summary': 'AI/ML Engineer driven to transform enterprise problems into intelligent autonomous solutions. Deep expertise in machine learning lifecycle, NLP, and model operationalization.',
-        'skills': [
-            'Machine Learning, Deep Learning, NLP (spaCy, Transformers, HuggingFace)',
-            'Frameworks: PyTorch, TensorFlow, Scikit-Learn, Pandas, NumPy',
-            'LLM Orchestration, Prompt Engineering, Agentic AI Systems, RAG Pipelines',
-            'Model Serving: FastAPI, Docker, MLflow, Experiment Tracking, Vector Databases'
-        ],
-        'exp': [
-            {'role': 'AI/ML & Automation Engineer', 'company': 'Tata Consultancy Services (TCS)', 'period': '2020 - Present', 'desc': 'Developing ML-driven anomaly detection and intelligent document processing systems.'},
-            {'role': 'Research Intern', 'company': 'Tata Institute of Fundamental Research (TIFR)', 'period': '2019', 'desc': 'Researched algorithmic analysis and statistical computational models.'}
-        ]
-    },
-    {
-        'file': 'data_science.pdf',
-        'title': 'Data Science & Analytics Specialist',
-        'summary': 'Data Scientist experienced in exploratory data analysis, statistical modeling, end-to-end analytical pipelines, and converting complex enterprise data into strategic decisions.',
-        'skills': [
-            'Data Wrangling & Analysis: Pandas, NumPy, SciPy, Jupyter Notebooks',
-            'Statistical Modeling, Hypothesis Testing, Predictive Analytics, Forecasting',
-            'Data Visualization: Matplotlib, Seaborn, Plotly, Dashboarding, Power BI',
-            'Big Data & Querying: Advanced SQL, ETL Pipelines, Feature Engineering'
-        ],
-        'exp': [
-            {'role': 'Data & Automation Engineer', 'company': 'Tata Consultancy Services (TCS)', 'period': '2020 - Present', 'desc': 'Engineered real-time telemetry dashboards and analytical data pipelines.'},
-            {'role': 'Research Intern', 'company': 'Tata Institute of Fundamental Research (TIFR)', 'period': '2019', 'desc': 'Handled large-scale statistical validation and dataset extraction.'}
-        ]
-    }
-]
+resume_data = {
+    'file': 'python_data_science_ai_ml_engineer.pdf',
+    'title': 'Python / Data Science / AI-ML Engineer',
+    'summary': 'Engineer combining Python backend development and automation with data science and AI/ML. Builds reliable data pipelines, applies statistical and predictive modeling to complex datasets, and develops intelligent applications spanning NLP and production model deployment.',
+    'skills': [
+        'Python, FastAPI, Django, REST APIs, Microservices, Process Automation',
+        'Pandas, NumPy, SQL, ETL Pipelines, Exploratory Data Analysis',
+        'Statistical Modeling, Hypothesis Testing, Predictive Analytics, Forecasting',
+        'Scikit-Learn, PyTorch, TensorFlow, NLP, LLM Workflows',
+        'Model Serving, Docker, Linux, CI/CD, Data Visualization'
+    ],
+    'exp': [
+        {'role': 'Python, Data Science & AI/ML Engineer', 'company': 'Tata Consultancy Services (TCS)', 'period': '2020 - Present', 'desc': 'Builds automated data and validation pipelines, analytical dashboards, and ML-driven anomaly detection and document processing systems.'},
+        {'role': 'Research Intern', 'company': 'Tata Institute of Fundamental Research (TIFR)', 'period': '2019', 'desc': 'Developed Python data processing workflows and applied statistical and algorithmic analysis to research datasets.'}
+    ]
+}
 
 dirs = ['c:/hozefa/website/public/resume', 'c:/hozefa/website/resume']
 for d in dirs:
     os.makedirs(d, exist_ok=True)
-    for r in roles_data:
-        target = os.path.join(d, r['file'])
-        create_simple_pdf(target, r['title'], r['summary'], r['skills'], r['exp'], edu, contact)
+    target = os.path.join(d, resume_data['file'])
+    create_simple_pdf(target, resume_data['title'], resume_data['summary'], resume_data['skills'], resume_data['exp'], edu, contact)
 
-print("All 3 resumes successfully generated!")
+print("Combined resume successfully generated!")

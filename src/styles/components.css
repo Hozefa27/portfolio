@@ -661,7 +661,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   gap: var(--space-xl);
-  max-width: 1050px;
+  max-width: 680px;
   margin-inline: auto;
 }
 
